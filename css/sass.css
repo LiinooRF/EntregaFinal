@@ -162,22 +162,7 @@ ul li a {
   }
 }
 
-.img__texto iframe{
-  display: flex;
-      flex-direction: row;
-
-  
+h1 {
+  font-size: 4em;
 }
-.img__texto h2{
-    display: flex;
-    margin-left: 50%;
-    margin-top: 3px;
-}
-
-.img__texto p {
-    display: flex;
-    margin-left: 50%;
-    flex-direction: row;
-}
-
 /*# sourceMappingURL=sass.css.map */

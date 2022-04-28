@@ -1,4 +1,4 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -14,11 +14,7 @@
   }
   
   header {
-    width: 100%;
-    padding: 40px;
-    color: white;
-    text-align: center;
-    background: #008E6A;
+    @include encabezado()
   }
   
   nav ul {
@@ -72,7 +68,7 @@
     }
   
     #section1 > div {
-      background-color: #DA102E;
+      @extend &:hover;
     }
   }
   
@@ -157,3 +153,26 @@
     }
   }
 
+  $headings: (
+    h1: 3em,
+    h2: 3em,
+    h3: 2em,
+    h4: 1em,
+    h5: 0.5em,
+  );
+
+  @each $headings in h1 {
+
+  h1{
+    font-size: $h1;
+  }
+}
+
+@mixin encabezado {
+  padding: 16px;
+  font-size: 22px;
+  background: #008E6A;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
